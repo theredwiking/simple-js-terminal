@@ -1,0 +1,19 @@
+{
+  "name": "js-terminal",
+  "version": "0.0.1",
+  "description": "terminal emulator made using js",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild"
+  },
+  "author": "theredwiking",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^16.0.5",
+    "electron-rebuild": "^3.2.5"
+  },
+  "dependencies": {
+    "node-pty": "^0.10.1"
+  }
+}
