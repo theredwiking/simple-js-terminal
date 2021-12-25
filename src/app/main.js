@@ -32,7 +32,7 @@ const createWindow = () => {
 	})
 
 	// Open the DevTools.
-	mainWindow.webContents.openDevTools();
+	//mainWindow.webContents.openDevTools();
 
 	ptyProcess.onData((data) => {
 		mainWindow.webContents.send('term.toWeb', data);
