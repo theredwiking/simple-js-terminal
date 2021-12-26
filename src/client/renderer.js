@@ -17,23 +17,22 @@ term.onKey(key => {
         window.ipcAPI.send('term.toShell', command);
         command = '';
     } else if (key.key === '\x7F') {
-        term.write('\x1b[D\ \x1b[D')
+        term.write('\x1b[D\ \x1b[D');
     }else if (key.key === '\x1BOD') {
-        term.write('\x1b[D')
+        term.write('\x1b[D');
     }else if (key.key === '\x1BOC') {
-        console.log('right arrow');
-        term.write('\x1b[C')
+        term.write('\x1b[C');
     }else if (key.key === '\x1BOB') {
-        term.write('\x1b[B')
+        term.write('\x1b[B');
     }else if (key.key === '\x1BOA') {
-        term.write('\x1b[A')
+        term.write('\x1b[A');
     } else {
         term.write(key.key, () => {
             command += key.key;
-        })
+        });
     }
-})
+});
 
 window.ipcAPI.receive('term.toWeb', (data) => {
     term.write(data);
-})
+});
