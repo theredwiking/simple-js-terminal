@@ -3,7 +3,7 @@
 	"tasks": [
         {
             "type": "npm",
-            "script": "dist",
+            "script": "build",
             "problemMatcher": [],
             "label": "Build terminal",
             "detail": "electron-builder"

@@ -6,14 +6,15 @@
   "scripts": {
     "start": "electron .",
     "rebuild": "electron-rebuild",
-	"build": "./build.sh",
-    "dist": "electron-builder",
+    "build": "./build/build.sh",
+    "dist:linux": "electron-builder -c builder-linux.json",
+    "dist:win": "electron-builder -c builder-win.json",
     "postinstall": "electron-builder install-app-deps"
   },
   "author": {
-	  "name": "theredwiking",
-	  "email": "theredviking1@gmail.com"
-	},
+    "name": "theredwiking",
+    "email": "theredviking1@gmail.com"
+  },
   "license": "ISC",
   "devDependencies": {
     "electron": "^16.0.5",

@@ -1,0 +1,17 @@
+{
+    "appId": "com.theredwiking.simpleterminal",
+    "directories": {
+        "output": "build/release/win"
+    },
+    "win": {
+        "target": [
+          "nsis"
+        ]
+      },
+      "nsis": {
+        "include": "build/release/win/installer.nsh",
+        "oneClick": false,
+        "perMachine": false,
+        "allowToChangeInstallationDirectory": true
+      }
+}
