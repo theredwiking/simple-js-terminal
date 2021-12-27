@@ -2,7 +2,7 @@
   "name": "js-terminal",
   "version": "0.0.1",
   "description": "terminal emulator made using js",
-  "main": "src/app/main.js",
+  "main": "lib/main.js",
   "scripts": {
     "start": "electron .",
     "rebuild": "electron-rebuild",
