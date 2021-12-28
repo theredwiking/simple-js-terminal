@@ -3,18 +3,31 @@
 
 <head>
 	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta name="viewport" content="width=device-width" />
+
 	<title>Node Term</title>
+
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm@4.16.0/css/xterm.css">
+    <link rel="stylesheet" href="css/halfmoon.min.css">
+	<link rel="stylesheet" href="css/index.css">
+
 	<script src="https://cdn.jsdelivr.net/npm/xterm@4.16.0/lib/xterm.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/xterm-addon-fit@0.5.0/lib/xterm-addon-fit.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/xterm-addon-webgl@0.11.4/lib/xterm-addon-webgl.js"></script>
     <script src="./utils/keyboard.js"></script>
-	<link rel="stylesheet" href="index.css">
+    <script src="./js/halfmoon.min.js"></script>
+    <script src="./utils/navbar.js"></script>
 </head>
 
-<body>
-	<div id="term-box"></div>
-	<script src="./renderer.js"></script>
+<body class="with-custom-webkit-scrollbars with-custom-css-scrollbars w-full h-full" data-set-preferred-mode-onload="true">
+    <div class="page-wrapper">
+        <div class="content-wrapper">
+            <div id="term-box"></div>
+            <script src="./js/renderer.js"></script>
+        </div>
+      </div>
 </body>
 
 </html>

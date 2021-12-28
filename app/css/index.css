@@ -3,11 +3,6 @@ html {
   height: 100%;
 }
 
-body {
-  margin: 0;
-  height: 100%;
-}
-
 #term-box, .terminal, .xterm {
   margin: 0;
   height: 100%;
